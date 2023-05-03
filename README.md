@@ -4,7 +4,7 @@ In this assingment we will add `letrec` to our `Calc` language so that recursive
 functions can be defined more easily.
 
 Please use the [implementation of `Calc`](https://github.com/sbunivedu/calc-lang-sol/blob/let/sol.zip)
-(without `letrec`) as your starter and study the code base along with the test cases to review
+(without `letrec`) as your starter code and study the code base along with the test cases to review
 the design and implementation of the language.
 
 ## Update environment
@@ -92,7 +92,7 @@ environment itself (circular).
 
 You will need to deal with [Scheme vector](https://docs.racket-lang.org/reference/vectors.html).
 Here are some examples:
-```
+```scheme
 (define v (vector 'a 'b 'c))
 
 (vector->list v)
@@ -113,7 +113,7 @@ v
 ## Test your solution
 
 Here are a few test programs:
-```
+```scheme
 (letrec ((fact (func (n)
                      (if n
                          (* n (fact (- n 1)))
